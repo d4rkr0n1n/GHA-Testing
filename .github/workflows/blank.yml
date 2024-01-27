@@ -20,6 +20,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
-      - name: Starting deployment to dev environment.
-      - name: Deploying to dev environment.
-      - name: Deployment to dev environment is completed.
+      - name: Started
+        run: echo Starting deployment to dev environment.
+      - name: Deploying
+        run: Deploying to dev environment.
+      - name: Finished
+        run: Deployment to dev environment is completed.
