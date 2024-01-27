@@ -23,6 +23,6 @@ jobs:
       - name: Started
         run: echo Starting deployment to dev environment.
       - name: Deploying
-        run: Deploying to dev environment.
+        run: echo Deploying to dev environment.
       - name: Finished
-        run: Deployment to dev environment is completed.
+        run: echo Deployment to dev environment is completed.
