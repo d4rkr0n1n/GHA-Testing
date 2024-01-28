@@ -13,7 +13,6 @@ jobs:
       - uses: actions/checkout@v4
       - name: Building Artifact
         run: sleep 5
-      - run: echo ${${{ github.job }}@u}
       
   dev:
     runs-on: ubuntu-latest
