@@ -18,6 +18,10 @@ jobs:
           echo test, and deploy your project.
   dev:
     runs-on: ubuntu-latest
+    needs: build
+    name: Dev
+    env:
+      env_name: dev
     steps:
       - uses: actions/checkout@v4
       - name: Started
@@ -26,3 +30,4 @@ jobs:
         run: echo Deploying to dev environment.
       - name: Finished
         run: echo Deployment to dev environment is completed.
+      - run: echo $env_name
