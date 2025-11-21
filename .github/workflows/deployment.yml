@@ -10,7 +10,7 @@ jobs:
     runs-on: ubuntu-latest
     name: Build
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v6
       - name: Building Artifact
         run: sleep 5
       
@@ -20,7 +20,7 @@ jobs:
     name: Dev Deployment
     environment: Dev
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v6
       - name: Deployment Started
         run: sleep 1
       - name: Deploying
@@ -33,7 +33,7 @@ jobs:
     name: Test Deployment
     environment: Test
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v6
       - name: Deployment Started
         run: sleep 1
       - name: Deploying
@@ -46,7 +46,7 @@ jobs:
     name: Stage Deployment
     environment: Stage
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v6
       - name: Deployment Started
         run: sleep 1
       - name: Deploying
@@ -59,7 +59,7 @@ jobs:
     name: Prod Deployment
     environment: Prod
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v6
       - name: Deployment Started
         run: sleep 1
       - name: Deploying
